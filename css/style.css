@@ -1,0 +1,109 @@
+@font-face {
+    font-family: "PT Sans";
+    src: url(../fonts/ptsans.woff);
+  }
+:root {
+    --main-bg-color: #FFFFFF; /* основной белый фон */
+    --reactange-color: #81B3D2; /* небесно-голубые прямоугольники*/
+    --blue-buttom-color-passive: #81B3D2; /* голубая кнопка */
+    --blue-buttom-color-hover:#669EC0;
+    --blue-buttom-color-active:#5496BD;
+    --brown-buttom-color-passive: #766357; /*коричневая кнопка */
+    --brown-buttom-color-hover:#604E43;
+    --brown-buttom-color-active:#503E33;
+    --grey-1-color: #EEEEEE; /* серый прямоугольник небольшая площадь--мало туристов */
+    --grey-2-color: #F2F2F2; /* серые прямоугольники (все) меню с датами заезда перед картой */
+    --black-font: #000000;
+    --white-font: #FFFFFF;
+    --brown-font: #766458; /* to the gordeous */
+    --blue-font-universal: #81B3D2;
+    --blue-font-for-welcome: #81B3D3; /* welcome */
+    font-family: "PT Sans";
+}
+
+.content {
+    width: 1200px; /*ширина всего сайта*/
+    background-color: #FFFFFF;
+    margin: 0 auto;
+}
+body {
+    background-color: #888888;
+}
+.welcome {
+    background-image: url("../img/images/background-photo.jpg");
+}
+.title-black {
+    color: var(--black-font)
+}
+.title-white {
+    color: var(--white-font); 
+}
+.title-white, .title-black {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 21px;
+    text-transform: uppercase
+}
+.title-big-black { /*Заинтересовались?*/
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 24px;
+    color: var(--black-font);
+    text-transform: uppercase
+}
+.title-medium-black { /* Седона — небольшой городок в Аризоне, заслуживающий большего! #visitsedona, номер телефона*/
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    color: var(--black-font);
+
+}
+.information-black {
+    color: var(--black-font);
+}
+.information-white {
+    color: var(--white-font);
+}
+.information-black, .information-white {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+}
+.head-buttons { /*кнопки в хедере плюс даты заезда и тд над картой*/
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 26px;
+    color: var(--black-font);
+    text-transform: uppercase;
+}
+.sorting { /*сортировка по цене etc*/
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+}
+.bg-blue {
+    background-color: var(--reactange-color);
+}
+.bg-grey-1 {
+    background-color: var(--grey-1-color)
+}
+.bg-grey-2 {
+    background-color: var(--grey-2-color)
+}
+.icon-social-web {
+    background-color: var(--blue-buttom-color-passive);
+}
+.icon-social-web:hover {
+    background-color: var(--blue-buttom-color-hover);
+}
+.icon-social-web:active {
+    background-color: var(--blue-buttom-color-active);
+}
+
