@@ -4,6 +4,7 @@
   }
 :root {
     --main-bg-color: #FFFFFF; /* основной белый фон */
+    --secondary-bg-color: #888888; /*основной голубой фон*/
     --reactange-color: #81B3D2; /* небесно-голубые прямоугольники*/
     --blue-buttom-color-passive: #81B3D2; /* голубая кнопка */
     --blue-buttom-color-hover:#669EC0;
@@ -17,17 +18,17 @@
     --white-font: #FFFFFF;
     --brown-font: #766458; /* to the gordeous */
     --blue-font-universal: #81B3D2;
-    --blue-font-for-welcome: #81B3D3; /* welcome */
-    font-family: "PT Sans";
+    --blue-font-for-welcome: #81B3D3; /* welcome */  
 }
 
 .content {
     width: 1200px; /*ширина всего сайта*/
-    background-color: #FFFFFF;
+    background-color: var(--main-bg-color);
     margin: 0 auto;
 }
 body {
-    background-color: #888888;
+    background-color: var(--secondary-bg-color);
+    font-family: "PT Sans", "Tahoma", sans-serif;
 }
 .welcome {
     background-image: url("../img/images/background-photo.jpg");
