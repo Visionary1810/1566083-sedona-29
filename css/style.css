@@ -62,9 +62,8 @@ body {
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
-    text-transform: uppercase;
     color: var(--black-font);
-
+    text-transform: uppercase;
 }
 .information-black {
     color: var(--black-font);
