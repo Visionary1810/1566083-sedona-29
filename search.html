@@ -2,123 +2,148 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="">Информация</a>
-        <a href="">Фото и видео</a>
-        <img
-          src="https://via.placeholder.com/1200x509"
-          alt="Горный пейзаж (приветствие)"
-        />
-        <a href="">Карта штата</a>
-        <a href="">Гостиницы</a>
-      </nav>
-    </header>
-    <main>
-      <section></section>
-      <div>
-        <div>НАЙДЕНО:3</div>
+    <div class="content">
+      <header>
+        <nav class="head-buttons">
+          <a href="">Информация</a>
+          <a href="">Фото и видео</a>
+          <img src="img/icons/logo.svg" alt="logo" />
+          <a href="">Карта штата</a>
+          <a href="">Гостиницы</a>
+        </nav>
+      </header>
+      <main>
+        <section></section>
         <div>
-          <div>СОРТИРОВКА:</div>
-          <div>ПО ЦЕНЕ</div>
-          <div>ПО ТИПУ</div>
-          <div>ПО РЕЙТИНГУ</div>
+          <div class="title-medium-black">НАЙДЕНО:3</div>
           <div>
-            <img src="img/icons/icon-up-down.svg" alt="Вверх-вниз" />
+            <div class="sorting">СОРТИРОВКА:</div>
+            <div>
+              <button class="sort-by">ПО ЦЕНЕ</button>
+              <button class="sort-by">ПО ТИПУ</button>
+              <button class="sort-by">ПО РЕЙТИНГУ</button>
+            </div>
+            <div>
+              <img src="img/icons/up.svg" alt="Вверх" />
+            </div>
+            <div>
+              <img src="img/icons/down.svg" alt="Вниз" />
+            </div>
           </div>
         </div>
-      </div>
-      <div>
         <div>
           <div>
+            <div>
+              <img
+                src="https://via.placeholder.com/135x90"
+                alt="Amara Resort & Spa"
+              />
+            </div>
+            <div class="title-medium-black">Amara Resort & Spa</div>
+            <div class="information-black">ГОСТИНИЦА</div>
+            <div class="information-black">От 4000 Р.</div>
+            <div>
+              <div class="buttons-for-hotels-blue">
+                <a href=""> ПОДРОБНЕЕ</a>
+              </div>
+              <div class="buttons-for-hotels-brown">
+                <a href=""> ЗАБРОНИРОВАТЬ</a>
+              </div>
+            </div>
+            <div>
+              <img src="img/icons/star.svg" alt="Star" />
+              <img src="img/icons/star.svg" alt="Star" />
+              <img src="img/icons/star.svg" alt="Star" />
+              <img src="img/icons/star.svg" alt="Star" />
+            </div>
+            <div class="information-black">Рейтинг: 8,5</div>
+          </div>
+          <div>
+            <div>
+              <img
+                src="https://via.placeholder.com/135x90"
+                alt="Desert Quail Inn"
+              />
+            </div>
+            <div class="title-medium-black">Desert Quail Inn</div>
+            <div class="information-black">МОТЕЛЬ</div>
+            <div class="information-black">От 3000 Р.</div>
+            <div>
+              <div class="buttons-for-hotels-blue">
+                <a href=""> ПОДРОБНЕЕ</a>
+              </div>
+              <div class="buttons-for-hotels-brown">
+                <a href=""> ЗАБРОНИРОВАТЬ</a>
+              </div>
+            </div>
+            <div>
+              <img src="img/icons/star.svg" alt="Star" />
+              <img src="img/icons/star.svg" alt="Star" />
+              <img src="img/icons/star.svg" alt="Star" />
+            </div>
+            <div class="information-black">Рейтинг: 8,9</div>
+          </div>
+          <div>
+            <div>
+              <img
+                src="https://via.placeholder.com/135x90"
+                alt="Villas at Poco Diablo"
+              />
+            </div>
+            <div class="title-medium-black">Villas at Poco Diablo</div>
+            <div class="information-black">АПАРТАМЕНТЫ</div>
+            <div class="information-black">От 2000 Р.</div>
+            <div>
+              <div class="buttons-for-hotels-blue">
+                <a href=""> ПОДРОБНЕЕ</a>
+              </div>
+              <div class="buttons-for-hotels-brown">
+                <a href=""> ЗАБРОНИРОВАТЬ</a>
+              </div>
+            </div>
+            <div>
+              <img src="img/icons/star.svg" alt="Star" />
+              <img src="img/icons/star.svg" alt="Star" />
+            </div>
+            <div class="information-black">Рейтинг: 9,2</div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div>
+          <p class="title-medium-black">#VISITSEDONA</p>
+          <p class="title-medium-black">
+            ТЕЛ:
+            <a class="title-medium-black" href="tel:84956660166"
+              >+7(495) 666-01-66</a
+            >
+          </p>
+        </div>
+        <div>
+          <div class="icon-social-web">
+            <a href=""><img src="img/icons/twitter.svg" alt="Twitter" /></a>
+          </div>
+          <div class="icon-social-web">
+            <a href=""><img src="img/icons/facebook.svg" alt="Facebook" /></a>
+          </div>
+          <div class="icon-social-web">
+            <a href=""><img src="img/icons/youtube.svg" alt="Youtube" /></a>
+          </div>
+        </div>
+        <div>
+          Website by
+          <a href="https://htmlacademy.ru/intensive/htmlcss">
             <img
-              src="https://via.placeholder.com/135x90"
-              alt="Amara Resort & Spa"
-            />
-          </div>
-          <div>Amara Resort & Spa</div>
-          <div>ГОСТИНИЦА</div>
-          <div>От 4000 Р.</div>
-          <div>
-            <a href=""> ПОДРОБНЕЕ</a>
-            <a href=""> ЗАБРОНИРОВАТЬ</a>
-          </div>
-          <div>
-            <img src="img/icons/star.svg" alt="Star" />
-            <img src="img/icons/star.svg" alt="Star" />
-            <img src="img/icons/star.svg" alt="Star" />
-            <img src="img/icons/star.svg" alt="Star" />
-          </div>
-          <div>Рейтинг: 8,5</div>
+              class="logo-htmlacademy"
+              src="img/icons/logo_htmlacademy.svg"
+              alt="Логотип Академии"
+          /></a>
         </div>
-        <div>
-          <div>
-            <img
-              src="https://via.placeholder.com/135x90"
-              alt="Desert Quail Inn"
-            />
-          </div>
-          <div>Desert Quail Inn</div>
-          <div>МОТЕЛЬ</div>
-          <div>От 3000 Р.</div>
-          <div>
-            <a href=""> ПОДРОБНЕЕ</a>
-            <a href=""> ЗАБРОНИРОВАТЬ</a>
-          </div>
-          <div>
-            <img src="img/icons/star.svg" alt="Star" />
-            <img src="img/icons/star.svg" alt="Star" />
-            <img src="img/icons/star.svg" alt="Star" />
-          </div>
-          <div>Рейтинг: 8,9</div>
-        </div>
-        <div>
-          <div>
-            <img
-              src="https://via.placeholder.com/135x90"
-              alt="Villas at Poco Diablo"
-            />
-          </div>
-          <div>Villas at Poco Diablo</div>
-          <div>АПАРТАМЕНТЫ</div>
-          <div>От 2000 Р.</div>
-          <div>
-            <a href=""> ПОДРОБНЕЕ</a>
-            <a href=""> ЗАБРОНИРОВАТЬ</a>
-          </div>
-          <div>
-            <img src="img/icons/star.svg" alt="Star" />
-            <img src="img/icons/star.svg" alt="Star" />
-          </div>
-          <div>Рейтинг: 9,2</div>
-        </div>
-      </div>
-    </main>
-    <footer>
-      <div>
-        <p>#VISITSEDONA</p>
-        <p>ТЕЛ:<a href="tel:84956660166">+7(495) 666-01-66</a></p>
-      </div>
-      <div>
-        <div>
-          <a href=""><img src="img/icons/twitter.svg" alt="Twitter" /></a>
-        </div>
-        <div>
-          <a href=""><img src="img/icons/facebook.svg" alt="Facebook" /></a>
-        </div>
-        <div>
-          <a href=""><img src="img/icons/youtube.svg" alt="Youtube" /></a>
-        </div>
-      </div>
-      <div>
-        Website by
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/icons/logo_htmlacademy.svg" alt="Логотип Академии"
-        /></a>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
