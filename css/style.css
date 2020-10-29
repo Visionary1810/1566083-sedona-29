@@ -78,7 +78,7 @@ body {
     line-height: 21px;
     text-transform: uppercase;
 }
-.head-buttons { /*кнопки в хедере плюс даты заезда и тд над картой*/
+.head-buttons { /*кнопки в хедере плюс даты заезда etc над картой*/
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
