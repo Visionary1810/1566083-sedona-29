@@ -27,6 +27,21 @@
     width: 1200px; /*ширина всего сайта*/
     background-color: var(--main-bg-color);
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: [col] auto [col] auto [col];
+    grid-template-rows: [row] auto [row] auto [row]; 
+}
+header {
+    grid-column: col 1 / span 3;
+	grid-row: row 1;
+}
+main {
+    grid-column: col 1 / span 3;
+	grid-row: row 2;
+}
+footer {
+    grid-column: col 1 / span 3;
+	grid-row: row 3;
 }
 body {
     background-color: var(--secondary-bg-color);
