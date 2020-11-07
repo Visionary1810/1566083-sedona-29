@@ -425,6 +425,7 @@ body {
 }
 .buttons-for-hotels-brown {
     background-color: var(--brown-buttom-color-passive);
+    outline: none;
 }
 .buttons-for-hotels-brown:hover {
     background-color: var(--brown-buttom-color-hover);
@@ -434,6 +435,7 @@ body {
 }
 .buttons-for-hotels-blue {
     background-color: var(--blue-buttom-color-passive);
+    outline: none;
 }
 .buttons-for-hotels-blue:hover {
     background-color: var(--blue-buttom-color-hover);
