@@ -200,8 +200,26 @@ body {
     color: var(--black-font);
     text-decoration: none;
 }
+.head-buttons a:hover {
+    color: var(--blue-font-universal);
+}
+.head-buttons a:active {
+    color: var(--black-font);
+    opacity: 0.3;
+}
+.head-buttons a:focus {
+    color:var(--brown-buttom-color-passive);
+}
 .head-buttons > img {
     z-index: 1;
+}
+.button-near-type-of-hotel-font {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--white-font);
+    text-transform: uppercase;
 }
 .found-form {
     background-image: url("../img/images/background-found.jpg");
@@ -221,6 +239,47 @@ body {
     display: flex;
     flex-direction: row;
 }
+.found-right {
+    display: flex;
+    width: 32px;
+    justify-content: space-between;
+}
+.button-up {
+    width: 11px;
+    height: 10px;
+    background-image: url("../img/icons/up.svg");
+    background-repeat: no-repeat;
+    outline: none;
+    border:none;
+    background-color: transparent;
+}
+.button-up:hover {
+    background-image: url("../img/icons/up-hover.svg");
+}
+.button-up:focus {
+    background-image: url("../img/icons/up-active.svg");
+}
+.button-up:active {
+    background-image: url("../img/icons/up-active.svg");
+}
+.button-down {
+    width: 11px;
+    height: 10px;
+    background-image: url("../img/icons/down.svg");
+    background-repeat: no-repeat;
+    outline: none;
+    border:none;
+    background-color: transparent;
+}
+.button-down:hover {
+    background-image: url("../img/icons/down-hover.svg");
+}
+.button-down:focus {
+    background-image: url("../img/icons/down-active.svg");
+}
+.button-down:active {
+    background-image: url("../img/icons/down-active.svg");
+}
 .type-of-sorting {
     display: flex;
     justify-content: space-between;
@@ -235,7 +294,7 @@ body {
     display: flex;
     height: 18px;
     margin-left: 40px;
-    margin-right: 40px;   
+    margin-right: 40px; 
 }
 .type-of-sorting-1 {
     display: flex;
@@ -259,7 +318,7 @@ body {
     font-weight: normal;
     font-size: 12px;
     line-height: 18px;
-    text-transform: uppercase; 
+    text-transform: uppercase;
 }
 .sort-by { /* по цене etc */
     font-style: normal;
@@ -270,11 +329,19 @@ body {
     opacity: 0.3;
     text-transform: uppercase;
     text-decoration: underline;
+    border: none;
+    outline: none;
+    background: none;
 }
 .sort-by:hover { /* по цене etc */
     color: var(--blue-buttom-color-hover);
     opacity: 1;
     text-decoration: underline;
+}
+.sort-by:focus { /* по цене etc */
+    color: var(--blue-buttom-color-hover);
+    opacity: 1;
+    text-decoration: none;
 }
 .sort-by:active { /* по цене etc */
     color: var(--black-font);
@@ -447,6 +514,30 @@ body {
     opacity: 0.3;
 }
 .buttons-for-hotels-brown:active span {
+    opacity: 0.3;
+}
+.link-to-specific-hotel { /*Amara Resort etc. */
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    color: var(--black-font);
+    text-transform: uppercase;
+}
+.link-to-specific-hotel > a {
+    text-decoration: none;
+}
+.link-to-specific-hotel > a:visited {
+    color: var(--black-font);
+    text-decoration: none;
+}
+.link-to-specific-hotel > a:hover {
+    color: var(--blue-font-universal);
+}
+.link-to-specific-hotel:active {
+    color: var(--black-font);
+}
+.link-to-specific-hotel:active a {
     opacity: 0.3;
 }
 .button-to-find-hotel { /*Поиск гостиницы в Седоне*/
