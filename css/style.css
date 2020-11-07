@@ -33,7 +33,8 @@
 }
 header {
     grid-column: col 1 / span 3;
-	grid-row: row 1;
+    grid-row: row 1;
+    height: 56px;
 }
 main {
     grid-column: col 1 / span 3;
@@ -119,6 +120,7 @@ body {
     height: 291px;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 .about-data-text {
     width: 435px;
@@ -156,6 +158,14 @@ body {
     color: var(--black-font);
     text-transform: uppercase;
 }
+.title-medium-white { /*Кнопка:"Поиск гостиницы в Седоне*/
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    color: var(--white-font);
+    text-transform: uppercase;
+}
 .information-black {
     color: var(--black-font);
 }
@@ -182,6 +192,16 @@ body {
     line-height: 26px;
     color: var(--black-font);
     text-transform: uppercase;
+}
+.head-buttons > a {
+    text-decoration: none;
+}
+.head-buttons > a:visited {
+    color: var(--black-font);
+    text-decoration: none;
+}
+.head-buttons > img {
+    z-index: 1;
 }
 .found-form {
     background-image: url("../img/images/background-found.jpg");
@@ -359,6 +379,9 @@ body {
 .icon-social-web:active {
     background-color: var(--blue-buttom-color-active);
 }
+.icon-social-web:active > a {
+    opacity: 0.3;
+}
 .phone {
     flex-direction: column;
     width: 251px;
@@ -389,6 +412,17 @@ body {
     display: flex;
     align-items: center;
 }
+.logo-htmlacademy {
+    background-image: url("../img/icons/logo-passive.svg");
+    width: 115px;
+    height: 41px;
+}
+.logo-htmlacademy:hover {
+    background-image: url("../img/icons/logo-hover.svg");
+}
+.logo-htmlacademy:active {
+    background-image: url("../img/icons/logo-active.svg");
+}
 .buttons-for-hotels-brown {
     background-color: var(--brown-buttom-color-passive);
 }
@@ -406,4 +440,16 @@ body {
 }
 .buttons-for-hotels-blue:active {
     background-color: var(--blue-buttom-color-active);
+}
+.buttons-for-hotels-brown:active > span {
+    opacity: 0.3;
+}
+.button-to-find-hotel {
+    display: flex;
+    width: 586px;
+    height: 68px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
 }
