@@ -443,10 +443,13 @@ body {
 .buttons-for-hotels-blue:active {
     background-color: var(--blue-buttom-color-active);
 }
-.buttons-for-hotels-brown:active > span {
+.buttons-for-hotels-blue:active span {
     opacity: 0.3;
 }
-.button-to-find-hotel {
+.buttons-for-hotels-brown:active span {
+    opacity: 0.3;
+}
+.button-to-find-hotel { /*Поиск гостиницы в Седоне*/
     display: flex;
     width: 586px;
     height: 68px;
@@ -454,4 +457,22 @@ body {
     align-items: center;
     position: absolute;
     bottom: 0;
+}
+.field {
+    display: flex;
+    width: 568px;
+    height: 395px;
+    background-color: var(--main-bg-color);
+    flex-direction: column;
+}
+.button-to-find { /*Найти*/
+    display: flex;
+    width: 458px;
+    height: 58px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 282px;
+    margin-bottom: 55px;
+    margin-left: 55px;
+    margin-right: 55px;
 }
