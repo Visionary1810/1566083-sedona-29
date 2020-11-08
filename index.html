@@ -13,7 +13,7 @@
           <a href="">Фото и видео</a>
           <img src="img/icons/logo.svg" alt="logo" />
           <a href="">Карта штата</a>
-          <a href="">Гостиницы</a>
+          <a href="search.html">Гостиницы</a>
         </nav>
       </header>
       <main>
@@ -122,11 +122,83 @@
               предложения гостиниц в Седоне
             </p>
           </div>
-          <button
-            class="title-medium-white buttons-for-hotels-brown button-to-find-hotel"
-          >
-            <span> Поиск гостиницы в Седоне </span>
-          </button>
+          <div class="search-container">
+            <button
+              class="title-medium-white buttons-for-hotels-brown button-to-find-hotel"
+            >
+              <span> Поиск гостиницы в Седоне </span>
+            </button>
+            <div class="pop-up">
+              <form>
+                <div class="data-input">
+                  <div class="arrival-date">
+                    <label class="head-buttons-text" for="arrival">
+                      Дата заезда:</label
+                    >
+                    <input
+                      class="head-buttons-text arrival-departure-data"
+                      type="date"
+                      id="arrival"
+                    />
+                  </div>
+                  <div class="departure-date">
+                    <label class="head-buttons-text" for="departure">
+                      Дата выезда:</label
+                    >
+                    <input
+                      class="head-buttons-text arrival-departure-data"
+                      type="date"
+                      id="departure"
+                    />
+                  </div>
+                  <div class="adults-children">
+                    <div class="adults-box">
+                      <label class="head-buttons-text" for="adults">
+                        Взрослые:</label
+                      >
+                      <div class="adults-box-field">
+                        <button class="head-buttons-text button-plus-minus">
+                          -
+                        </button>
+                        <input
+                          class="head-buttons-text adults-children-field"
+                          type="number"
+                          id="adults"
+                        />
+                        <button class="head-buttons-text button-plus-minus">
+                          +
+                        </button>
+                      </div>
+                    </div>
+                    <div class="children-box">
+                      <label class="head-buttons-text" for="children"
+                        >Дети:</label
+                      >
+                      <div class="children-box-field">
+                        <button class="head-buttons-text button-plus-minus">
+                          -
+                        </button>
+                        <input
+                          class="head-buttons-text adults-children-field"
+                          type="number"
+                          id="children"
+                        />
+                        <button class="head-buttons-text button-plus-minus">
+                          +
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="title-medium-white buttons-for-hotels-blue button-to-find"
+                  type="submit"
+                >
+                  <span> Найти </span>
+                </button>
+              </form>
+            </div>
+          </div>
         </div>
         <div>
           <img
@@ -165,14 +237,6 @@
           </a>
         </div>
       </footer>
-    </div>
-    <div class=field>
-      <div> Для ввода данных </div>
-      <button
-          class="title-medium-white buttons-for-hotels-blue button-to-find"
-        >
-          <span> Найти </span>
-      </button>
     </div>
   </body>
 </html>
