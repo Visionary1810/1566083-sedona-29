@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <link type="text/css" rel="stylesheet" href="css/normalise.css" />
-    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <link type="text/css" rel="stylesheet" href="css/style-minified.css" />
     <title>HTML Academy: Седона</title>
   </head>
-  <body>
+  <body class="body">
     <div class="content">
-      <header>
+      <header class="header">
         <nav class="head-buttons-text head-buttons">
           <a href="">Информация</a>
           <a href="">Фото и видео</a>
@@ -19,10 +19,14 @@
           <a class="current-page" href="search.html">Гостиницы</a>
         </nav>
       </header>
-      <main>
-        <form class="found-form" action="https://echo.htmlacademy.ru/" method="get">
+      <main class="main">
+        <form
+          class="found-form"
+          action="https://echo.htmlacademy.ru/"
+          method="get"
+        >
           <div class="infrastructure-and-types-of-housing">
-            <div class="box-unfrastructure-1">
+            <div class="box-infrastructure-1">
               <div class="white-font-for-form">Инфраструктура:</div>
               <div class="infrastructure">
                 <input type="checkbox" id="infrastructure-1" />
@@ -52,7 +56,7 @@
                 </label>
               </div>
             </div>
-            <div class="box-unfrastructure-2">
+            <div class="box-infrastructure-2">
               <div class="white-font-for-form">Тип жилья:</div>
               <div class="type-of-housing">
                 <input type="checkbox" id="type-of-housing-1" />
@@ -90,17 +94,22 @@
             <div>
               <div class="money-from-to information-white">
                 <span class="money"> от 0 </span>
-                <img src="img/icons/separator.svg" width="2" height="22" alt="separator" />
+                <img
+                  src="img/icons/separator.svg"
+                  width="2"
+                  height="22"
+                  alt="separator"
+                />
                 <span class="money"> до 3000</span>
               </div>
               <div class="slider">
-              <div class="round-1"> </div>
-              <div class="stick-1"> </div>
+                <div class="round-1"></div>
+                <div class="stick-1"></div>
 
-              <div class="round-2"> </div>
+                <div class="round-2"></div>
 
-              <div class="stick-2"></div>
-            </div>
+                <div class="stick-2"></div>
+              </div>
             </div>
             <button class="button-show">Показать</button>
           </div>
@@ -124,7 +133,7 @@
           <div class="about-hotels">
             <div class="hotel-left">
               <div>
-                <img
+                <img class="amara-resort-background-color"
                   src="img/images/amara-resort.png"
                   width="135"
                   height="90"
@@ -151,10 +160,30 @@
             </div>
             <div class="hotel-grading">
               <div class="hotel-stars">
-                <img src="img/icons/star.svg" width="18" height="17" alt="Star" />
-                <img src="img/icons/star.svg" width="18" height="17" alt="Star" />
-                <img src="img/icons/star.svg" width="18" height="17" alt="Star" />
-                <img src="img/icons/star.svg" width="18" height="17" alt="Star" />
+                <img
+                  src="img/icons/star.svg"
+                  width="18"
+                  height="17"
+                  alt="Star"
+                />
+                <img
+                  src="img/icons/star.svg"
+                  width="18"
+                  height="17"
+                  alt="Star"
+                />
+                <img
+                  src="img/icons/star.svg"
+                  width="18"
+                  height="17"
+                  alt="Star"
+                />
+                <img
+                  src="img/icons/star.svg"
+                  width="18"
+                  height="17"
+                  alt="Star"
+                />
               </div>
               <div class="information-black hotel-score">Рейтинг: 8,5</div>
             </div>
@@ -162,7 +191,7 @@
           <div class="about-hotels">
             <div class="hotel-left">
               <div>
-                <img
+                <img class="desert-quail-inn-background-color"
                   src="img/images/desert.png"
                   width="135"
                   height="90"
@@ -189,9 +218,24 @@
             </div>
             <div class="hotel-grading">
               <div class="hotel-stars">
-                <img src="img/icons/star.svg" width="18" height="17" alt="Star" />
-                <img src="img/icons/star.svg" width="18" height="17" alt="Star" />
-                <img src="img/icons/star.svg" width="18" height="17" alt="Star" />
+                <img
+                  src="img/icons/star.svg"
+                  width="18"
+                  height="17"
+                  alt="Star"
+                />
+                <img
+                  src="img/icons/star.svg"
+                  width="18"
+                  height="17"
+                  alt="Star"
+                />
+                <img
+                  src="img/icons/star.svg"
+                  width="18"
+                  height="17"
+                  alt="Star"
+                />
               </div>
               <div class="information-black hotel-score">Рейтинг: 8,9</div>
             </div>
@@ -199,7 +243,7 @@
           <div class="about-hotels">
             <div class="hotel-left">
               <div>
-                <img
+                <img class="villas-poco-diablo-background-color"
                   src="img/images/villas.png"
                   width="135"
                   height="90"
@@ -226,15 +270,25 @@
             </div>
             <div class="hotel-grading">
               <div class="hotel-stars">
-                <img src="img/icons/star.svg" width="18" height="17" alt="Star" />
-                <img src="img/icons/star.svg" width="18" height="17" alt="Star" />
+                <img
+                  src="img/icons/star.svg"
+                  width="18"
+                  height="17"
+                  alt="Star"
+                />
+                <img
+                  src="img/icons/star.svg"
+                  width="18"
+                  height="17"
+                  alt="Star"
+                />
               </div>
               <div class="information-black hotel-score">Рейтинг: 9,2</div>
             </div>
           </div>
         </div>
       </main>
-      <footer>
+      <footer class="footer">
         <div class="phone">
           <p class="title-medium-black">#VISITSEDONA</p>
           <p class="title-medium-black">
@@ -246,13 +300,34 @@
         </div>
         <div class="social-webs">
           <div class="icon-social-web social-web-buttons">
-            <a href=""><img src="img/icons/twitter.svg" width="17" height="17" alt="Twitter" /></a>
+            <a href=""
+              ><img
+                src="img/icons/twitter.svg"
+                width="17"
+                height="17"
+                alt="Twitter"
+                aria-label="Twitter"
+            /></a>
           </div>
           <div class="icon-social-web social-web-buttons button-facebook">
-            <a href=""><img src="img/icons/facebook.svg" width="12" height="22" alt="Facebook" /></a>
+            <a href=""
+              ><img
+                src="img/icons/facebook.svg"
+                width="12"
+                height="22"
+                alt="Facebook"
+                aria-label="Facebook"
+            /></a>
           </div>
           <div class="icon-social-web social-web-buttons">
-            <a href=""><img src="img/icons/youtube.svg" width="20" height="16" alt="Youtube" /></a>
+            <a href=""
+              ><img
+                src="img/icons/youtube.svg"
+                width="20"
+                height="16"
+                alt="Youtube"
+                aria-label="Youtube"
+            /></a>
           </div>
         </div>
         <div class="website">

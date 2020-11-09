@@ -9,6 +9,7 @@
     --blue-buttom-color-passive: #81B3D2; /* голубая кнопка */
     --blue-buttom-color-hover:#669EC0;
     --blue-buttom-color-active:#5496BD;
+    --blue-buttom-color-active-opacity-03:#5496bd4d;
     --brown-buttom-color-passive: #766357; /*коричневая кнопка*/
     --brown-buttom-color-hover:#604E43;
     --brown-buttom-color-active:#503E33;
@@ -24,6 +25,15 @@
     --grey-for-plus-minus: #a9a9a9;
     --grey-for-border-focus-data: #E5E5E5;
     --grey-for-hover-data: #EBEBEB;
+    --welcome-background-color: #008B8B;
+    --real-town-background-color: #DB7093;
+    --devils-bridge-background-color:#B22222;
+    --find-hotel-background-color: #4B0082;
+    --amara-resort-background-color: #FF00FF;	
+    --desert-quail-inn-background-color: #00FFFF;	
+    --villas-poco-diablo-background-color: #008000;
+    --type-of-sorting-color:  #dadada;
+    --black-opacity-03: #0000004d;
 }
 
 a {
@@ -39,17 +49,17 @@ a {
     grid-template-rows: [row] auto [row] auto [row];
     box-shadow: 0px 0px 15px 5px rgba(0, 1, 1, 0.2);
 }
-header {
+.header {
     display: flex;
     grid-column: col 1 / span 3;
     grid-row: row 1;
     height: 56px;
 }
-main {
+.main {
     grid-column: col 1 / span 3;
 	  grid-row: row 2;
 }
-footer {
+.footer {
     grid-column: col 1 / span 3;
     grid-row: row 3;
     display: flex;
@@ -57,7 +67,7 @@ footer {
     align-items: center;
     justify-content: space-around;
 }
-body {
+.body {
     background-color: var(--main-bg-color);
     font-family: "PT Sans", "Tahoma", sans-serif;
     margin: 0;
@@ -99,6 +109,7 @@ body {
 }
 .welcome {
     background-image: url("../img/images/background-photo.jpg");
+    background-color: var(--welcome-background-color);
     width: 1200px;
     height: 509px;
     display: flex;
@@ -226,8 +237,7 @@ body {
     color: var(--blue-font-universal);
 }
 .head-buttons a:active {
-    color: var(--black-font);
-    opacity: 0.3;
+    color: var(--black-opacity-03);
 }
 .current-page {
     color:var(--brown-buttom-color-passive);
@@ -245,6 +255,7 @@ body {
 }
 .found-form {
     background-image: url("../img/images/background-found.jpg");
+    background-color: var(--find-hotel-background-color);
     width: 1200px;
     height: 217px;
     display: flex;
@@ -338,14 +349,13 @@ body {
 }
 
 .type-of-sorting .type-of-sorting-1 {
-  color: #81B3D2;
-  opacity: 1;
+  color: var(--blue-buttom-color-passive);
 }
 
 .type-of-sorting .type-of-sorting-2,
 .type-of-sorting .type-of-sorting-3 {
-  color: #dadada;
-  border-bottom: 1px dotted #81b3d2;
+  color: var(--type-of-sorting-color);
+  border-bottom: 1px dotted var(--blue-buttom-color-passive);
 
 }
 
@@ -371,16 +381,13 @@ body {
 }
 .sort-by:hover { /* по цене etc */
     color: var(--blue-buttom-color-hover);
-    opacity: 1;
 }
 .sort-by:focus { /* по цене etc */
     color: var(--blue-buttom-color-hover);
-    opacity: 1;
     text-decoration: none;
 }
 .sort-by:active { /* по цене etc */
     color: var(--black-font);
-    opacity: 1;
     text-decoration: none;
 }
 .bg-blue {
@@ -404,10 +411,10 @@ body {
     align-items: center;
     padding: 25px 72px;
     justify-content: space-between;
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid var( --grey-for-border-focus-data);
 }
 .about-hotels:first-child {
-    border-top: 1px solid #e5e5e5;
+    border-top: 1px solid var( --grey-for-border-focus-data);
 }
 .hotel-description {
     display: flex;
@@ -487,7 +494,7 @@ body {
     background-color: var(--blue-buttom-color-active);
 }
 .icon-social-web:active > a {
-    opacity: 0.3;
+    background-color: var(--blue-buttom-color-active-opacity-03);
 }
 .phone {
     flex-direction: column;
@@ -553,10 +560,10 @@ body {
     background-color: var(--blue-buttom-color-active);
 }
 .buttons-for-hotels-blue:active span {
-    opacity: 0.3;
+    background-color: var(--blue-buttom-color-active-opacity-03);
 }
 .buttons-for-hotels-brown:active span {
-    opacity: 0.3;
+    background-color: var(--blue-buttom-color-active-opacity-03);
 }
 .link-to-specific-hotel { /*Amara Resort etc. */
     font-style: normal;
@@ -580,7 +587,7 @@ body {
     color: var(--black-font);
 }
 .link-to-specific-hotel:active a {
-    opacity: 0.3;
+    color: var(--black-opacity-03);
 }
 .button-to-find-hotel { /*Поиск гостиницы в Седоне*/
     display: flex;
@@ -590,14 +597,17 @@ body {
     align-items: center;
 }
 .pop-up {
-    display: none;
+    display: flex;
+    opacity: 0;
     width: 568px;
-    height: 395px;
     background-color: var(--main-bg-color);
     flex-direction: column;
+    height: 0;
+    transition: all 0.3s;
 }
 .show {
-    display: flex;
+    opacity: 1;
+    height: 395px;
 }
 .button-to-find { /*Найти*/
     display: flex;
@@ -753,12 +763,12 @@ input[type=number]::-webkit-outer-spin-button {
     text-align: left;
     width: 100%;
 }
-.box-unfrastructure-1 {
+.box-infrastructure-1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.box-unfrastructure-2 {
+.box-infrastructure-2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -798,7 +808,6 @@ input[type=number]::-webkit-outer-spin-button {
     text-align: center;
 }
 .found-form input[type=checkbox] {
-    opacity: 0;
     display: none;
 }
 .found-form input[type=checkbox]+label::before {
@@ -876,4 +885,19 @@ input[type=number]::-webkit-outer-spin-button {
     background-image: url(../img/images/map.png);
     width:1199px;
     height:594px;
+}
+.real-town-background-color {
+    background-color: var(--real-town-background-color);
+}
+.devils-bridge-background-color {
+    background-color: var(--devils-bridge-background-color);
+}
+.amara-resort-background-color {
+    background-color: var( --amara-resort-background-color);
+}
+.desert-quail-inn-background-color {
+    background-color: var(--desert-quail-inn-background-color);
+}
+.villas-poco-diablo-background-color {
+    background-color: var(--villas-poco-diablo-background-color);
 }

@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <link type="text/css" rel="stylesheet" href="css/normalise.css" />
-    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <link type="text/css" rel="stylesheet" href="css/style-minified.css" />
     <title>HTML Academy: Седона</title>
   </head>
-  <body>
+  <body class="body">
     <div class="content">
-      <header>
+      <header class="header">
         <nav class="head-buttons-text head-buttons">
           <a href="">Информация</a>
           <a href="">Фото и видео</a>
@@ -17,10 +17,15 @@
           <a href="search.html">Гостиницы</a>
         </nav>
       </header>
-      <main>
+      <main class="main">
         <section class="welcome">
           <div class="welcome-text">
-            <img src="img/icons/welcome.svg" width="460" height="350" alt="welcome text" />
+            <img
+              src="img/icons/welcome.svg"
+              width="460"
+              height="350"
+              alt="welcome text"
+            />
           </div>
         </section>
         <div class="introduction">
@@ -44,7 +49,7 @@
               Седона - не аттракцион для туристов, там течёт своя жизнь
             </p>
           </div>
-          <img
+          <img class="real-town-background-color"
             src="img/images/sedona-1.png"
             width="800"
             height="256"
@@ -67,7 +72,12 @@
             </p>
           </div>
           <div class="menu-item">
-            <img src="img/icons/gift.svg" width="64" height="77" alt="Сувениры" />
+            <img
+              src="img/icons/gift.svg"
+              width="64"
+              height="77"
+              alt="Сувениры"
+            />
             <p class="title-black">Сувениры</p>
             <p class="information-black">
               Не только китайского, но и местного <br />производства!
@@ -75,7 +85,7 @@
           </div>
         </section>
         <div class="info-picture">
-          <img
+          <img class="devils-bridge-background-color"
             src="img/images/devils-bridge.png"
             width="800"
             height="256"
@@ -204,11 +214,16 @@
           </div>
         </div>
         <div class="map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d418162.2562545959!2d-111.83698773564375!3d35.03441596107522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1603132230379!5m2!1sru!2sru" width="1200" height="594" style="border:0">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d418162.2562545959!2d-111.83698773564375!3d35.03441596107522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1603132230379!5m2!1sru!2sru"
+            width="1200"
+            height="594"
+            style="border: 0"
+          >
           </iframe>
         </div>
       </main>
-      <footer>
+      <footer class="footer">
         <div class="phone">
           <p class="title-medium-black">#VISITSEDONA</p>
           <p class="title-medium-black">
@@ -220,13 +235,34 @@
         </div>
         <div class="social-webs">
           <div class="icon-social-web social-web-buttons">
-            <a href=""><img src="img/icons/twitter.svg" width="17" height="17" alt="Twitter" /></a>
+            <a href=""
+              ><img
+                src="img/icons/twitter.svg"
+                width="17"
+                height="17"
+                alt="Twitter"
+                aria-label="Twitter"
+            /></a>
           </div>
           <div class="icon-social-web social-web-buttons button-facebook">
-            <a href=""><img src="img/icons/facebook.svg" width="12" height="22" alt="Facebook" /></a>
+            <a href=""
+              ><img
+                src="img/icons/facebook.svg"
+                width="12"
+                height="22"
+                alt="Facebook"
+                aria-label="Facebook"
+            /></a>
           </div>
           <div class="icon-social-web social-web-buttons">
-            <a href=""><img src="img/icons/youtube.svg" width="20" height="16" alt="Youtube" /></a>
+            <a href=""
+              ><img
+                src="img/icons/youtube.svg"
+                width="20"
+                height="16"
+                alt="Youtube"
+                aria-label="Youtube"
+            /></a>
           </div>
         </div>
         <div class="website">
@@ -237,6 +273,6 @@
         </div>
       </footer>
     </div>
-    <script charset="utf-8" src="js/script.js"></script>
+    <script charset="utf-8" src="js/script-minified.js"></script>
   </body>
 </html>
