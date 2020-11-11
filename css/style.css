@@ -34,6 +34,7 @@
     --villas-poco-diablo-background-color: #008000;
     --type-of-sorting-color:  #dadada;
     --black-opacity-03: #0000004d;
+    --box-shadow: #00010133;
 }
 
 a {
@@ -47,7 +48,7 @@ a {
     display: grid;
     grid-template-columns: [col] auto [col] auto [col];
     grid-template-rows: [row] auto [row] auto [row];
-    box-shadow: 0px 0px 15px 5px rgba(0, 1, 1, 0.2);
+    box-shadow: 0px 0px 15px 5px var(--box-shadow);
 }
 .header {
     display: flex;
@@ -602,12 +603,11 @@ a {
     width: 568px;
     background-color: var(--main-bg-color);
     flex-direction: column;
-    height: 0;
+    height: 395px;
     transition: all 0.3s;
 }
 .show {
     opacity: 1;
-    height: 395px;
 }
 .button-to-find { /*Найти*/
     display: flex;
@@ -900,4 +900,34 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .villas-poco-diablo-background-color {
     background-color: var(--villas-poco-diablo-background-color);
+}
+.slideDown{
+	animation-name: slideDown;
+	-webkit-animation-name: slideDown;	
+
+	animation-duration: 1s;	
+	-webkit-animation-duration: 1s;
+
+	animation-timing-function: ease;	
+	-webkit-animation-timing-function: ease;	
+}
+@keyframes slideDown {
+	0% {
+		transform: translateY(-100%);
+	}
+	50%{
+		transform: translateY(8%);
+	}
+	65%{
+		transform: translateY(-4%);
+	}
+	80%{
+		transform: translateY(4%);
+	}
+	95%{
+		transform: translateY(-2%);
+	}			
+	100% {
+		transform: translateY(0%);
+	}		
 }
